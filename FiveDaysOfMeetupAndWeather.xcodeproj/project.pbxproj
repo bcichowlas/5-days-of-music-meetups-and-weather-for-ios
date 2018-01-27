@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2291C63CBA745154A7243EE8 /* Pods_FiveDaysOfMeetupAndWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C398260F01D4DDF8D4DE54 /* Pods_FiveDaysOfMeetupAndWeather.framework */; };
+		931A83EA2007036C00D6792A /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A83E92007036C00D6792A /* WeatherInfo.swift */; };
+		931A83EC2007039100D6792A /* MeetupInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A83EB2007039100D6792A /* MeetupInfo.swift */; };
+		9341A45B1FFD001D00B9C24D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341A45A1FFD001D00B9C24D /* AppDelegate.swift */; };
+		9341A45D1FFD001D00B9C24D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341A45C1FFD001D00B9C24D /* ViewController.swift */; };
+		9341A4601FFD001D00B9C24D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9341A45E1FFD001D00B9C24D /* Main.storyboard */; };
+		9341A4631FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9341A4611FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather.xcdatamodeld */; };
+		9341A4651FFD001D00B9C24D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9341A4641FFD001D00B9C24D /* Assets.xcassets */; };
+		9341A4681FFD001D00B9C24D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9341A4661FFD001D00B9C24D /* LaunchScreen.storyboard */; };
+		9341A4731FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341A4721FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherTests.swift */; };
+		9341A47E1FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341A47D1FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherUITests.swift */; };
+		93718B8F20085D94004CE579 /* TableViewCellMeetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718B8E20085D94004CE579 /* TableViewCellMeetup.swift */; };
+		93718B9020085D94004CE579 /* TableViewCellMeetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93718B8E20085D94004CE579 /* TableViewCellMeetup.swift */; };
+		937FE20A200704CE00A8A599 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937FE209200704CE00A8A599 /* DataManager.swift */; };
+		937FE20C2007B2C100A8A599 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937FE20B2007B2C000A8A599 /* CoreLocation.framework */; };
+		93A4B2D62015962B00997B61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341A45C1FFD001D00B9C24D /* ViewController.swift */; };
+		93A4B2D72015963300997B61 /* WebKitHeightCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DCD01820155B8D00C3737A /* WebKitHeightCache.swift */; };
+		93A4B2D820159D9F00997B61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341A45A1FFD001D00B9C24D /* AppDelegate.swift */; };
+		93A4B2D920159DB600997B61 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937FE209200704CE00A8A599 /* DataManager.swift */; };
+		93A4B2DA20159DBC00997B61 /* MeetupInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A83EB2007039100D6792A /* MeetupInfo.swift */; };
+		93A4B2DB20159DC100997B61 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A83E92007036C00D6792A /* WeatherInfo.swift */; };
+		93A4B2DC20159DC700997B61 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8EF4E1FFD0213003E271B /* Model.swift */; };
+		93A4B2F5201605A300997B61 /* DbMeetup+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B2EF201605A300997B61 /* DbMeetup+CoreDataClass.swift */; };
+		93A4B2F6201605A300997B61 /* DbMeetup+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B2EF201605A300997B61 /* DbMeetup+CoreDataClass.swift */; };
+		93A4B2F7201605A300997B61 /* DbMeetup+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B2F0201605A300997B61 /* DbMeetup+CoreDataProperties.swift */; };
+		93A4B2F8201605A300997B61 /* DbMeetup+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B2F0201605A300997B61 /* DbMeetup+CoreDataProperties.swift */; };
+		93A4B2F9201605A300997B61 /* DbWeather+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B2F1201605A300997B61 /* DbWeather+CoreDataClass.swift */; };
+		93A4B2FA201605A300997B61 /* DbWeather+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B2F1201605A300997B61 /* DbWeather+CoreDataClass.swift */; };
+		93A4B2FB201605A300997B61 /* DbWeather+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B2F2201605A300997B61 /* DbWeather+CoreDataProperties.swift */; };
+		93A4B2FC201605A300997B61 /* DbWeather+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B2F2201605A300997B61 /* DbWeather+CoreDataProperties.swift */; };
+		93A4B2FD201605A300997B61 /* DbWebKitHeight+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B2F3201605A300997B61 /* DbWebKitHeight+CoreDataClass.swift */; };
+		93A4B2FE201605A300997B61 /* DbWebKitHeight+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B2F3201605A300997B61 /* DbWebKitHeight+CoreDataClass.swift */; };
+		93A4B2FF201605A300997B61 /* DbWebKitHeight+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B2F4201605A300997B61 /* DbWebKitHeight+CoreDataProperties.swift */; };
+		93A4B300201605A300997B61 /* DbWebKitHeight+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B2F4201605A300997B61 /* DbWebKitHeight+CoreDataProperties.swift */; };
+		93C8EF4C1FFD01F8003E271B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8EF4B1FFD01F8003E271B /* Util.swift */; };
+		93C8EF4F1FFD0213003E271B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8EF4E1FFD0213003E271B /* Model.swift */; };
+		93DCD01920155B8E00C3737A /* WebKitHeightCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DCD01820155B8D00C3737A /* WebKitHeightCache.swift */; };
+		93F4A34120160E5A00C37F28 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8EF4B1FFD01F8003E271B /* Util.swift */; };
+		A43A5758E53039CC9E06BBA3 /* Pods_FiveDaysOfMeetupAndWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11510779E2F2677479DA66B4 /* Pods_FiveDaysOfMeetupAndWeatherTests.framework */; };
+		B10D1BF03D193D5BB4F77205 /* Pods_FiveDaysOfMeetupAndWeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8931BD3BC85D1FEEA3299B /* Pods_FiveDaysOfMeetupAndWeatherUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9341A46F1FFD001D00B9C24D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9341A44F1FFD001D00B9C24D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9341A4561FFD001D00B9C24D;
+			remoteInfo = FiveDaysOfMeetupAndWeather;
+		};
+		9341A47A1FFD001D00B9C24D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9341A44F1FFD001D00B9C24D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9341A4561FFD001D00B9C24D;
+			remoteInfo = FiveDaysOfMeetupAndWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DFCC54340CA0B4AD14C6B5F /* Pods-FiveDaysOfMeetupAndWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveDaysOfMeetupAndWeatherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeatherTests/Pods-FiveDaysOfMeetupAndWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		11510779E2F2677479DA66B4 /* Pods_FiveDaysOfMeetupAndWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveDaysOfMeetupAndWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C398260F01D4DDF8D4DE54 /* Pods_FiveDaysOfMeetupAndWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveDaysOfMeetupAndWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8509FB40A8C850506D07F0F3 /* Pods-FiveDaysOfMeetupAndWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveDaysOfMeetupAndWeatherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeatherTests/Pods-FiveDaysOfMeetupAndWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87F9D0B08BE93F71BA9AA697 /* Pods-FiveDaysOfMeetupAndWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveDaysOfMeetupAndWeatherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeatherUITests/Pods-FiveDaysOfMeetupAndWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8FC2E33694F8F9E3E9602593 /* Pods-FiveDaysOfMeetupAndWeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveDaysOfMeetupAndWeatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeatherUITests/Pods-FiveDaysOfMeetupAndWeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		931A83E92007036C00D6792A /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		931A83EB2007039100D6792A /* MeetupInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupInfo.swift; sourceTree = "<group>"; };
+		9341A4571FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiveDaysOfMeetupAndWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9341A45A1FFD001D00B9C24D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9341A45C1FFD001D00B9C24D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9341A45F1FFD001D00B9C24D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9341A4621FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FiveDaysOfMeetupAndWeather.xcdatamodel; sourceTree = "<group>"; };
+		9341A4641FFD001D00B9C24D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9341A4671FFD001D00B9C24D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9341A4691FFD001D00B9C24D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9341A46E1FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveDaysOfMeetupAndWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9341A4721FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDaysOfMeetupAndWeatherTests.swift; sourceTree = "<group>"; };
+		9341A4741FFD001D00B9C24D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9341A4791FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveDaysOfMeetupAndWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9341A47D1FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDaysOfMeetupAndWeatherUITests.swift; sourceTree = "<group>"; };
+		9341A47F1FFD001D00B9C24D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93718B8E20085D94004CE579 /* TableViewCellMeetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellMeetup.swift; sourceTree = "<group>"; };
+		937FE209200704CE00A8A599 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		937FE20B2007B2C000A8A599 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		93A4B2EF201605A300997B61 /* DbMeetup+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DbMeetup+CoreDataClass.swift"; sourceTree = "<group>"; };
+		93A4B2F0201605A300997B61 /* DbMeetup+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DbMeetup+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		93A4B2F1201605A300997B61 /* DbWeather+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DbWeather+CoreDataClass.swift"; sourceTree = "<group>"; };
+		93A4B2F2201605A300997B61 /* DbWeather+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DbWeather+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		93A4B2F3201605A300997B61 /* DbWebKitHeight+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DbWebKitHeight+CoreDataClass.swift"; sourceTree = "<group>"; };
+		93A4B2F4201605A300997B61 /* DbWebKitHeight+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DbWebKitHeight+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		93C8EF4B1FFD01F8003E271B /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		93C8EF4E1FFD0213003E271B /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		93DCD01820155B8D00C3737A /* WebKitHeightCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebKitHeightCache.swift; sourceTree = "<group>"; };
+		AE8931BD3BC85D1FEEA3299B /* Pods_FiveDaysOfMeetupAndWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveDaysOfMeetupAndWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DBEAB0F122222F17051176 /* Pods-FiveDaysOfMeetupAndWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveDaysOfMeetupAndWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeather/Pods-FiveDaysOfMeetupAndWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		FFD7E303AFF41F510183BBDF /* Pods-FiveDaysOfMeetupAndWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveDaysOfMeetupAndWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeather/Pods-FiveDaysOfMeetupAndWeather.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9341A4541FFD001D00B9C24D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937FE20C2007B2C100A8A599 /* CoreLocation.framework in Frameworks */,
+				2291C63CBA745154A7243EE8 /* Pods_FiveDaysOfMeetupAndWeather.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9341A46B1FFD001D00B9C24D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43A5758E53039CC9E06BBA3 /* Pods_FiveDaysOfMeetupAndWeatherTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9341A4761FFD001D00B9C24D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10D1BF03D193D5BB4F77205 /* Pods_FiveDaysOfMeetupAndWeatherUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48BEDAEA91ACCB7858A3AC14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7DBEAB0F122222F17051176 /* Pods-FiveDaysOfMeetupAndWeather.debug.xcconfig */,
+				FFD7E303AFF41F510183BBDF /* Pods-FiveDaysOfMeetupAndWeather.release.xcconfig */,
+				8509FB40A8C850506D07F0F3 /* Pods-FiveDaysOfMeetupAndWeatherTests.debug.xcconfig */,
+				0DFCC54340CA0B4AD14C6B5F /* Pods-FiveDaysOfMeetupAndWeatherTests.release.xcconfig */,
+				8FC2E33694F8F9E3E9602593 /* Pods-FiveDaysOfMeetupAndWeatherUITests.debug.xcconfig */,
+				87F9D0B08BE93F71BA9AA697 /* Pods-FiveDaysOfMeetupAndWeatherUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9341A44E1FFD001D00B9C24D = {
+			isa = PBXGroup;
+			children = (
+				93A4B2EF201605A300997B61 /* DbMeetup+CoreDataClass.swift */,
+				93A4B2F0201605A300997B61 /* DbMeetup+CoreDataProperties.swift */,
+				93A4B2F1201605A300997B61 /* DbWeather+CoreDataClass.swift */,
+				93A4B2F2201605A300997B61 /* DbWeather+CoreDataProperties.swift */,
+				93A4B2F3201605A300997B61 /* DbWebKitHeight+CoreDataClass.swift */,
+				93A4B2F4201605A300997B61 /* DbWebKitHeight+CoreDataProperties.swift */,
+				9341A4591FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather */,
+				9341A4711FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherTests */,
+				9341A47C1FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherUITests */,
+				9341A4581FFD001D00B9C24D /* Products */,
+				48BEDAEA91ACCB7858A3AC14 /* Pods */,
+				A792139B4CB51A11A746519A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9341A4581FFD001D00B9C24D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9341A4571FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather.app */,
+				9341A46E1FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherTests.xctest */,
+				9341A4791FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9341A4591FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather */ = {
+			isa = PBXGroup;
+			children = (
+				93C8EF4D1FFD01FE003E271B /* Model */,
+				93C8EF4A1FFD01D5003E271B /* Util */,
+				9341A45A1FFD001D00B9C24D /* AppDelegate.swift */,
+				9341A45C1FFD001D00B9C24D /* ViewController.swift */,
+				93718B8E20085D94004CE579 /* TableViewCellMeetup.swift */,
+				9341A45E1FFD001D00B9C24D /* Main.storyboard */,
+				9341A4641FFD001D00B9C24D /* Assets.xcassets */,
+				9341A4661FFD001D00B9C24D /* LaunchScreen.storyboard */,
+				9341A4691FFD001D00B9C24D /* Info.plist */,
+				9341A4611FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather.xcdatamodeld */,
+			);
+			path = FiveDaysOfMeetupAndWeather;
+			sourceTree = "<group>";
+		};
+		9341A4711FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				9341A4721FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherTests.swift */,
+				9341A4741FFD001D00B9C24D /* Info.plist */,
+			);
+			path = FiveDaysOfMeetupAndWeatherTests;
+			sourceTree = "<group>";
+		};
+		9341A47C1FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9341A47D1FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherUITests.swift */,
+				9341A47F1FFD001D00B9C24D /* Info.plist */,
+			);
+			path = FiveDaysOfMeetupAndWeatherUITests;
+			sourceTree = "<group>";
+		};
+		93C8EF4A1FFD01D5003E271B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				93C8EF4B1FFD01F8003E271B /* Util.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		93C8EF4D1FFD01FE003E271B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93C8EF4E1FFD0213003E271B /* Model.swift */,
+				931A83E92007036C00D6792A /* WeatherInfo.swift */,
+				931A83EB2007039100D6792A /* MeetupInfo.swift */,
+				937FE209200704CE00A8A599 /* DataManager.swift */,
+				93DCD01820155B8D00C3737A /* WebKitHeightCache.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A792139B4CB51A11A746519A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				937FE20B2007B2C000A8A599 /* CoreLocation.framework */,
+				63C398260F01D4DDF8D4DE54 /* Pods_FiveDaysOfMeetupAndWeather.framework */,
+				11510779E2F2677479DA66B4 /* Pods_FiveDaysOfMeetupAndWeatherTests.framework */,
+				AE8931BD3BC85D1FEEA3299B /* Pods_FiveDaysOfMeetupAndWeatherUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9341A4561FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9341A4821FFD001D00B9C24D /* Build configuration list for PBXNativeTarget "FiveDaysOfMeetupAndWeather" */;
+			buildPhases = (
+				8D54318F1CFA581EF58D2A40 /* [CP] Check Pods Manifest.lock */,
+				9341A4531FFD001D00B9C24D /* Sources */,
+				9341A4541FFD001D00B9C24D /* Frameworks */,
+				9341A4551FFD001D00B9C24D /* Resources */,
+				E749FCE60CB6714174D60980 /* [CP] Embed Pods Frameworks */,
+				4D045FCA69F95AD09C60691E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FiveDaysOfMeetupAndWeather;
+			productName = FiveDaysOfMeetupAndWeather;
+			productReference = 9341A4571FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9341A46D1FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9341A4851FFD001D00B9C24D /* Build configuration list for PBXNativeTarget "FiveDaysOfMeetupAndWeatherTests" */;
+			buildPhases = (
+				46A82FDEF41979097F419BE8 /* [CP] Check Pods Manifest.lock */,
+				9341A46A1FFD001D00B9C24D /* Sources */,
+				9341A46B1FFD001D00B9C24D /* Frameworks */,
+				9341A46C1FFD001D00B9C24D /* Resources */,
+				BAA5B1B5A2582C1090F7E8DD /* [CP] Embed Pods Frameworks */,
+				682108C9F574F4B2ADD390DF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9341A4701FFD001D00B9C24D /* PBXTargetDependency */,
+			);
+			name = FiveDaysOfMeetupAndWeatherTests;
+			productName = FiveDaysOfMeetupAndWeatherTests;
+			productReference = 9341A46E1FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9341A4781FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9341A4881FFD001D00B9C24D /* Build configuration list for PBXNativeTarget "FiveDaysOfMeetupAndWeatherUITests" */;
+			buildPhases = (
+				D21BEB0D5FBCD3A7F1DF3DBE /* [CP] Check Pods Manifest.lock */,
+				9341A4751FFD001D00B9C24D /* Sources */,
+				9341A4761FFD001D00B9C24D /* Frameworks */,
+				9341A4771FFD001D00B9C24D /* Resources */,
+				3A9F9B681429BC2D2E1FE6E1 /* [CP] Embed Pods Frameworks */,
+				FB26DE14E237FCF74F3C4A6A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9341A47B1FFD001D00B9C24D /* PBXTargetDependency */,
+			);
+			name = FiveDaysOfMeetupAndWeatherUITests;
+			productName = FiveDaysOfMeetupAndWeatherUITests;
+			productReference = 9341A4791FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9341A44F1FFD001D00B9C24D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Real Keys Music";
+				TargetAttributes = {
+					9341A4561FFD001D00B9C24D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9341A46D1FFD001D00B9C24D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9341A4561FFD001D00B9C24D;
+					};
+					9341A4781FFD001D00B9C24D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9341A4561FFD001D00B9C24D;
+					};
+				};
+			};
+			buildConfigurationList = 9341A4521FFD001D00B9C24D /* Build configuration list for PBXProject "FiveDaysOfMeetupAndWeather" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9341A44E1FFD001D00B9C24D;
+			productRefGroup = 9341A4581FFD001D00B9C24D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9341A4561FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather */,
+				9341A46D1FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherTests */,
+				9341A4781FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9341A4551FFD001D00B9C24D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9341A4681FFD001D00B9C24D /* LaunchScreen.storyboard in Resources */,
+				9341A4651FFD001D00B9C24D /* Assets.xcassets in Resources */,
+				9341A4601FFD001D00B9C24D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9341A46C1FFD001D00B9C24D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9341A4771FFD001D00B9C24D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A9F9B681429BC2D2E1FE6E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeatherUITests/Pods-FiveDaysOfMeetupAndWeatherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46A82FDEF41979097F419BE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FiveDaysOfMeetupAndWeatherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D045FCA69F95AD09C60691E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeather/Pods-FiveDaysOfMeetupAndWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		682108C9F574F4B2ADD390DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeatherTests/Pods-FiveDaysOfMeetupAndWeatherTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D54318F1CFA581EF58D2A40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FiveDaysOfMeetupAndWeather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAA5B1B5A2582C1090F7E8DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeatherTests/Pods-FiveDaysOfMeetupAndWeatherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D21BEB0D5FBCD3A7F1DF3DBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FiveDaysOfMeetupAndWeatherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E749FCE60CB6714174D60980 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeather/Pods-FiveDaysOfMeetupAndWeather-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeather/Pods-FiveDaysOfMeetupAndWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB26DE14E237FCF74F3C4A6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiveDaysOfMeetupAndWeatherUITests/Pods-FiveDaysOfMeetupAndWeatherUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9341A4531FFD001D00B9C24D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A4B2F9201605A300997B61 /* DbWeather+CoreDataClass.swift in Sources */,
+				931A83EA2007036C00D6792A /* WeatherInfo.swift in Sources */,
+				93A4B2FF201605A300997B61 /* DbWebKitHeight+CoreDataProperties.swift in Sources */,
+				93DCD01920155B8E00C3737A /* WebKitHeightCache.swift in Sources */,
+				93C8EF4F1FFD0213003E271B /* Model.swift in Sources */,
+				9341A45D1FFD001D00B9C24D /* ViewController.swift in Sources */,
+				9341A4631FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather.xcdatamodeld in Sources */,
+				93A4B2FB201605A300997B61 /* DbWeather+CoreDataProperties.swift in Sources */,
+				9341A45B1FFD001D00B9C24D /* AppDelegate.swift in Sources */,
+				93718B8F20085D94004CE579 /* TableViewCellMeetup.swift in Sources */,
+				93A4B2FD201605A300997B61 /* DbWebKitHeight+CoreDataClass.swift in Sources */,
+				93A4B2F7201605A300997B61 /* DbMeetup+CoreDataProperties.swift in Sources */,
+				93C8EF4C1FFD01F8003E271B /* Util.swift in Sources */,
+				937FE20A200704CE00A8A599 /* DataManager.swift in Sources */,
+				93A4B2F5201605A300997B61 /* DbMeetup+CoreDataClass.swift in Sources */,
+				931A83EC2007039100D6792A /* MeetupInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9341A46A1FFD001D00B9C24D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A4B2DC20159DC700997B61 /* Model.swift in Sources */,
+				93A4B2DB20159DC100997B61 /* WeatherInfo.swift in Sources */,
+				93A4B2D62015962B00997B61 /* ViewController.swift in Sources */,
+				93F4A34120160E5A00C37F28 /* Util.swift in Sources */,
+				93A4B300201605A300997B61 /* DbWebKitHeight+CoreDataProperties.swift in Sources */,
+				93A4B2DA20159DBC00997B61 /* MeetupInfo.swift in Sources */,
+				93A4B2D920159DB600997B61 /* DataManager.swift in Sources */,
+				93A4B2F6201605A300997B61 /* DbMeetup+CoreDataClass.swift in Sources */,
+				93A4B2FA201605A300997B61 /* DbWeather+CoreDataClass.swift in Sources */,
+				93A4B2D72015963300997B61 /* WebKitHeightCache.swift in Sources */,
+				9341A4731FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherTests.swift in Sources */,
+				93A4B2D820159D9F00997B61 /* AppDelegate.swift in Sources */,
+				93A4B2FE201605A300997B61 /* DbWebKitHeight+CoreDataClass.swift in Sources */,
+				93A4B2F8201605A300997B61 /* DbMeetup+CoreDataProperties.swift in Sources */,
+				93718B9020085D94004CE579 /* TableViewCellMeetup.swift in Sources */,
+				93A4B2FC201605A300997B61 /* DbWeather+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9341A4751FFD001D00B9C24D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9341A47E1FFD001D00B9C24D /* FiveDaysOfMeetupAndWeatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9341A4701FFD001D00B9C24D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9341A4561FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather */;
+			targetProxy = 9341A46F1FFD001D00B9C24D /* PBXContainerItemProxy */;
+		};
+		9341A47B1FFD001D00B9C24D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9341A4561FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather */;
+			targetProxy = 9341A47A1FFD001D00B9C24D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9341A45E1FFD001D00B9C24D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9341A45F1FFD001D00B9C24D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9341A4661FFD001D00B9C24D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9341A4671FFD001D00B9C24D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9341A4801FFD001D00B9C24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9341A4811FFD001D00B9C24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9341A4831FFD001D00B9C24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7DBEAB0F122222F17051176 /* Pods-FiveDaysOfMeetupAndWeather.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9595VSQC9;
+				INFOPLIST_FILE = FiveDaysOfMeetupAndWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realkeysmusic.FiveDaysOfMeetupAndWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9341A4841FFD001D00B9C24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFD7E303AFF41F510183BBDF /* Pods-FiveDaysOfMeetupAndWeather.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9595VSQC9;
+				INFOPLIST_FILE = FiveDaysOfMeetupAndWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realkeysmusic.FiveDaysOfMeetupAndWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9341A4861FFD001D00B9C24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8509FB40A8C850506D07F0F3 /* Pods-FiveDaysOfMeetupAndWeatherTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9595VSQC9;
+				INFOPLIST_FILE = FiveDaysOfMeetupAndWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realkeysmusic.FiveDaysOfMeetupAndWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FiveDaysOfMeetupAndWeather.app/FiveDaysOfMeetupAndWeather";
+			};
+			name = Debug;
+		};
+		9341A4871FFD001D00B9C24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DFCC54340CA0B4AD14C6B5F /* Pods-FiveDaysOfMeetupAndWeatherTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9595VSQC9;
+				INFOPLIST_FILE = FiveDaysOfMeetupAndWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realkeysmusic.FiveDaysOfMeetupAndWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FiveDaysOfMeetupAndWeather.app/FiveDaysOfMeetupAndWeather";
+			};
+			name = Release;
+		};
+		9341A4891FFD001D00B9C24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC2E33694F8F9E3E9602593 /* Pods-FiveDaysOfMeetupAndWeatherUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9595VSQC9;
+				INFOPLIST_FILE = FiveDaysOfMeetupAndWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realkeysmusic.FiveDaysOfMeetupAndWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FiveDaysOfMeetupAndWeather;
+			};
+			name = Debug;
+		};
+		9341A48A1FFD001D00B9C24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87F9D0B08BE93F71BA9AA697 /* Pods-FiveDaysOfMeetupAndWeatherUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9595VSQC9;
+				INFOPLIST_FILE = FiveDaysOfMeetupAndWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realkeysmusic.FiveDaysOfMeetupAndWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FiveDaysOfMeetupAndWeather;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9341A4521FFD001D00B9C24D /* Build configuration list for PBXProject "FiveDaysOfMeetupAndWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9341A4801FFD001D00B9C24D /* Debug */,
+				9341A4811FFD001D00B9C24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9341A4821FFD001D00B9C24D /* Build configuration list for PBXNativeTarget "FiveDaysOfMeetupAndWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9341A4831FFD001D00B9C24D /* Debug */,
+				9341A4841FFD001D00B9C24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9341A4851FFD001D00B9C24D /* Build configuration list for PBXNativeTarget "FiveDaysOfMeetupAndWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9341A4861FFD001D00B9C24D /* Debug */,
+				9341A4871FFD001D00B9C24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9341A4881FFD001D00B9C24D /* Build configuration list for PBXNativeTarget "FiveDaysOfMeetupAndWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9341A4891FFD001D00B9C24D /* Debug */,
+				9341A48A1FFD001D00B9C24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9341A4611FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9341A4621FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather.xcdatamodel */,
+			);
+			currentVersion = 9341A4621FFD001D00B9C24D /* FiveDaysOfMeetupAndWeather.xcdatamodel */;
+			path = FiveDaysOfMeetupAndWeather.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9341A44F1FFD001D00B9C24D /* Project object */;
+}
